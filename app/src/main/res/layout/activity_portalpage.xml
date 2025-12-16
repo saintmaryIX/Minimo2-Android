@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/navideno"
+        android:scaleType="centerCrop"/>
+
+
+
+    <ScrollView
+        android:id="@+id/portalScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@android:color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/logoIcon"
+                android:layout_width="464dp"
+                android:layout_height="274dp"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/playBttn"
+                android:fontFamily="@font/pressstart2pregular"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bluerectanglebttn"
+                android:backgroundTint="@null"
+                android:text="JUGAR"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/logoIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/shopBttn"
+                android:fontFamily="@font/pressstart2pregular"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:background="@drawable/redrectanglebttn"
+                android:backgroundTint="@null"
+                android:text="TIENDA"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/playBttn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/inventoryBttn"
+                android:fontFamily="@font/pressstart2pregular"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:background="@drawable/redrectanglebttn"
+                android:backgroundTint="@null"
+                android:text="INVENTARIO"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/shopBttn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/rankBttn"
+                android:fontFamily="@font/pressstart2pregular"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:background="@drawable/redrectanglebttn"
+                android:backgroundTint="@null"
+                android:text="RANKING"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/inventoryBttn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/perfilBttn"
+                android:fontFamily="@font/pressstart2pregular"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:background="@drawable/redrectanglebttn"
+                android:backgroundTint="@null"
+                android:text="PERFIL"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/rankBttn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- REG X-MAS EVENT -->
+            <Button
+                android:id="@+id/registerEventBttn"
+                android:fontFamily="@font/pressstart2pregular"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:background="@drawable/redrectanglebttn"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                android:text="REG X-MAS EVENT"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/perfilBttn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <!-- VER X-MAS EVENT -->
+            <Button
+                android:id="@+id/viewEventBttn"
+                android:fontFamily="@font/pressstart2pregular"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:background="@drawable/redrectanglebttn"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
+                android:text="VER X-MAS EVENT"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/registerEventBttn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <!-- CERRAR SESIÓN (sin hueco extra) -->
+            <Button
+                android:id="@+id/logoutButton"
+                android:fontFamily="@font/pressstart2pregular"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:background="@drawable/orangerectanglebttn"
+                android:backgroundTint="@null"
+                android:text="CERRAR SESIÓN"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/viewEventBttn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>
